@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            text-align: center;
+        }
+        .green, .red, .purple, .blue{
+            height:200px;
+            width:200px;
+            border-radius: 20%;
+            border:2px solid black;
+            margin:1rem;
+        }
+        .container{
+            display :flex;
+            justify-content: center;
+        }
+        .green{
+            background-color:rgb(176, 205, 46);
+        }
+        .red{
+            background-color:rgb(140, 46, 46);
+        }
+        .purple{
+            background-color:rgb(89, 49, 101);
+        }
+        .blue{
+            background-color:rgb(36, 104, 111);
+        }
+        .flash{
+            background-color: white;
+        }
+        .gflash{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+    <h2>Press any key to start the game.</h2>
+    <div class="container">
+        <div class="line1">
+            <div class="btn green" type="button" id="green"></div>
+            <div class="btn red" type="button" id="red"></div>
+        </div>
+        <div class="line2">
+            <div class="btn purple" type="button" id="purple"></div>
+            <div class="btn blue" type="button" id="blue"></div>
+        </div>
+    </div>
+    <script src="p9.js"></script>
+</body>
+</html>
